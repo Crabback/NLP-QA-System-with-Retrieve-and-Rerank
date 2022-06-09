@@ -1,5 +1,6 @@
 # QA-System-with-Retrieve-and-Rerank
 Collaborators: Zhengjia Mao, Shuyan Yu, Xiaoyu Liu
+
 In this project, we dived into one of the hottest Natural Language Processing (NLP) topics, a document ranking task specifically, and built a Covid question-answering (QA) system based on the Retrieve-and-Rerank framework. This task is important for efficiently extracting relevant information from a large amount of documents. Our primary target contribution is to optimize traditional QA systems that generally rely on a single NLP model and require expensive computing resources. We, instead, experimented document retrieval models, TF-IDF and BM25, with different tokenization approaches to narrow down the ranges of target documents and then utilized strong learner BERT to rerank the retrieved data to improve relevantivity of the recommended documents. This optimized QA system can be simple while effective even with limited computational resources. Given the untokenized ranking results by TF-IDF as a benchmark, we found that the combination of BM25 and BERT performed fairly well in recommending documents relevant to a given query. 
 
 Data source: https://www.kaggle.com/datasets/allen-institute-for-ai/CORD-19-research-challenge
